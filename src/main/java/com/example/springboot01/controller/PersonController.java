@@ -23,7 +23,7 @@ public class PersonController {
     }
 
     @RequestMapping(path = "delete")
-    public void deletePerson(@RequestBody Long id) {
+    public void deletePerson(Long id) {
         personService.removeById(id);
     }
 }
